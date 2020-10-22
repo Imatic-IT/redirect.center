@@ -38,6 +38,11 @@ Create an * entry in your DNS.
 ```sh
 *.redirect.center CNAME TO redirect.center
 ```
+## Usage
+To redirect www.proof.com to www.proof-two.com keeping the URL parameters, just set your www DNS entry on proof.com:
+www.proof.com IN CNAME www.proof-two.com.opts-uri.redirect.center.
+
+A path can be supported through the service's ".opts-slash." function. Redirect jobs.my-domain.com to my-domain.com/jobs Configure your DNS Zone as follows: Host Record: jobs Type: CNAME To: www.my-domain.com.opts-slash.jobs.redirect.center 
 
 ## Contributors
 
